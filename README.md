@@ -4,7 +4,7 @@ Exploratory analysis of price inefficiencies caused by significant increases in 
 
 <!-- ![Cumulative Abnormal Returns for the event windows](/figures/avalanche_cumulative_return.png "Cumulative Abnormal Returns") -->
 <div align="center">
-<img src="/figures/avalanche_cumulative_return.png" alt="Cumulative Abnormal Returns for the event windows" width="500"/>
+<img src="/figures/avalanche_cumulative_return.png" alt="Cumulative Abnormal Returns for the event windows" width="750"/>
 <p><i>Figure 1.</i></p>
   </div>
 
