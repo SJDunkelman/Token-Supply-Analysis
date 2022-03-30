@@ -2,11 +2,11 @@
 
 Exploratory analysis of price inefficiencies caused by significant increases in the circulating supply of a cryptocurrency token, with the objective of assessing whether this relationship can be used to form a trading strategy for the client.
 
-
-
-// Img of graphs
-
-<tools badges>
+<!-- ![Cumulative Abnormal Returns for the event windows](/figures/avalanche_cumulative_return.png "Cumulative Abnormal Returns") -->
+<div align="center">
+<img src="/figures/avalanche_cumulative_return.png" alt="Cumulative Abnormal Returns for the event windows" width="500"/>
+<p><i>Figure 1.</i></p>
+  </div>
 
 ## Table of Contents
 
@@ -51,16 +51,13 @@ You can find an implementation of this in <code>benchmark.py</code> for BTC, ETH
 
 #### Abnormal return OLS
 
-To calculate abnormal returns we need to derive α (excess return of token) & β (sensitivity of return to market changes). This is done using an OLS regression of token log return against the log return of the benchmark derived previously. For this exploratory data analysis we focused on Avalanche (AVA) which is shown below in figure 1.
+To calculate abnormal returns we need to derive α (excess return of token) & β (sensitivity of return to market changes). This is done using an OLS regression of token log return against the log return of the benchmark derived previously. For this exploratory data analysis we focused on Avalanche (AVA) which is shown below in figure 2.
 
 ![An OLS regression of Avalanche against a market benchmark](/figures/avalanche_market_regression.png "OLS regression")
-<p align="center"><i>Figure 1.</i></p>
+<p align="center"><i>Figure 2.</i></p>
 
 #### Event study
-Dates of significant circulating supply changes were then identified for the Avalanche token based on announced vesting/supply events. The cumulative abnormal return for a window of 21 days either side of the event, the plots of which you can see below in figure 2.
-
-![Cumulative Abnormal Returns for the event windows](/figures/avalanche_cumulative_return.png "Cumulative Abnormal Returns")
-<p align="center"><i>Figure 2.</i></p>
+Dates of significant circulating supply changes were then identified for the Avalanche token based on announced vesting/supply events. The cumulative abnormal return for a window of 21 days either side of the event, the plots of which you can see above in figure 1.
 
 The code for the abnormal returns and CAR can be found in <code>analysis.py</code> 
 The conclusions of the analysis can be found in the report PDF in the <code>report</code> folder of this repo.
